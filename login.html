@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>LR East Hub</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid m-0 p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark m-0 p-0">
+                <div class="container">
+                    <a class="navbar-brand" href=""><img class="logo rounded-5" src="images/Optimized-LR_favicon.jpg" alt="logo" width="200%"></a>
+                    <div>
+                        <img class="title" src="images/LR_logos-removebg-preview.png" alt="" width="300px">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Sign-In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="mb-4">Register</h2>
+                <form action="process_registration.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" class="form-control" id="middleName" name="middleName">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="repeatPassword">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword" name="repeatPassword" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="birthdate">Birthdate</label>
+                            <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Add more fields as needed -->
+
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS (Assuming you are using Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
